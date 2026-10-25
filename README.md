@@ -102,10 +102,6 @@ The smaller phantom exhibited earlier changes in diffusion metrics, suggesting f
 
 **Future work:** Use micro-CT to characterize pore geometry and connectivity, evaluate more complex white-matter-mimicking geometries using customized printer instructions, optimize diameter-specific printing parameters, and assess vacuum degassing to reduce trapped air.
 
-## Figures
-
-The following figure files are provided alongside this README in the accompanying figure package. Upload them to a `figures/` directory to enable the relative links and previews below.
-
 ## Figures and Results
 
 ### Figure 1. Phantom Configuration, Photographs, Mean b = 0 Images, and Printing Summary
