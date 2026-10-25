@@ -106,26 +106,23 @@ The smaller phantom exhibited earlier changes in diffusion metrics, suggesting f
 
 The following figure files are provided alongside this README in the accompanying figure package. Upload them to a `figures/` directory to enable the relative links and previews below.
 
-### Phantom configuration, photographs, mean b = 0 images, and printing summary
+## Figures and Results
 
-![Phantom designs, physical specimens, mean b0 images, and printing summary](figures/Project_Overview.png)
+### Figure 1. Phantom Configuration, Photographs, Mean b = 0 Images, and Printing Summary
 
-### Longitudinal FA, MD, and ODI measurements
+![Phantom configurations, physical specimens, mean b0 images, and printing specifications](Figures/Project_Overview.png)
 
-![FA MD ODI across eight sessions](figures/FA%2C%20ODI%2C%20MD%20Vs%20Sessions.png)
+### Figure 2. Longitudinal FA, MD, and ODI Measurements
 
-### Longitudinal FA maps
+![FA, MD, and ODI measurements across eight MRI sessions](Figures/FA%2C%20ODI%2C%20MD%20Vs%20Sessions.png)
 
-![FA maps across eight sessions](figures/FA%20Map%20Vs%20Sessions.png)
+### Figure 3. Longitudinal Mean Diffusivity (MD) Maps
 
-### Longitudinal MD maps
+![MD maps across eight MRI sessions](Figures/MD%20Map%20Vs%20Sessions.png)
 
-![MD maps across eight sessions](figures/MD%20Map%20Vs%20Sessions.png)
+### Figure 4. Longitudinal Fractional Anisotropy (FA) Maps
 
-### Visual study overview
-
-![Study overview](figures/ISMRM_Preview_300dpi%281%29.png)
-
+![FA maps across eight MRI sessions](Figures/FA%20Map%20Vs%20Sessions.png)
 
 
 ## Reproducibility notes
