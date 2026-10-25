@@ -1,10 +1,11 @@
-# 7T Diffusion MRI Phantoms
+# 7T 3D Printed Diffusion MRI Phantoms
 
 **Exploring Diameter-Dependent Diffusion Metric Changes During PVA Dissolution in 3D-Printed Axon-Mimetic 7T MRI Phantoms**
 
 **Research repository · 7T diffusion MRI · 3D printing · Quantitative MRI · Longitudinal phantom characterization**
 
-This repository documents the design, fabrication, preparation, 7T MRI acquisition, and quantitative characterization of three custom 3D-printed axon-mimetic diffusion phantoms. The exploratory study examines how phantom diameter may influence water penetration, dissolution of the water-soluble polyvinyl alcohol (PVA) component of GEL-LAY filament, and longitudinal changes in diffusion MRI metrics.
+This repository documents the design, fabrication, preparation, 7T MRI acquisition, and quantitative characterization of three custom 3D-printed axon-mimetic diffusion phantoms. The exploratory study explore Diameter-Dependent Diffusion Metric Changes During PVA Dissolution in 3D-Printed Axon-Mimetic 7T MRI Phantoms
+
 
 > **Study status:** Eight MRI sessions over 25 days. Findings are exploratory and do not establish a definitive PVA dissolution time, a causal mechanism, or an optimal phantom diameter.
 
@@ -74,34 +75,30 @@ Eight scanning sessions per phantom were conducted approximately twice weekly ac
 
 Preprocessing and analysis used **MRtrix3**, **FSL**, and **Python**, including diffusion-image denoising, diffusion metric estimation, and manual ROI delineation. Tensor-derived **FA** and **MD** and NODDI-derived **ODI** maps were evaluated. Two manually defined, filtered, slice-based ROIs were used for each phantom: a **central crossing-fiber ROI (C-ROI)** and a **surrounding parallel-fiber ROI (P-ROI)**. Mean metric values were extracted from the middle slice for each session.
 
-ROI-derived values reflect the selected slices and masks rather than whole-phantom averages. NODDI-derived ODI should be treated as a model-dependent measure in this synthetic porous material, not a direct measurement of microscopic fiber crossing geometry.
-
 ## Results: eight-session longitudinal observations
 
 ### Fractional anisotropy
 
-The expected **C-ROI FA < P-ROI FA** contrast appeared in the small phantom from day 15 (0.481 vs 0.548) and in the large phantom from day 18 (0.406 vs 0.424). The medium phantom fluctuated and showed this contrast by day 25 (0.512 vs 0.529). Low-FA bands were visible in the parallel regions of medium and large phantoms, suggesting potential printing-related heterogeneity or localized water accumulation; their physical origin remains unverified.
+The expected **C-ROI FA < P-ROI FA** contrast appeared in the small phantom from day 15 (0.481 vs 0.548) and in the large phantom from day 18 (0.406 vs 0.424). The medium phantom fluctuated and showed this contrast by day 25 (0.512 vs 0.529). Low-FA bands were visible in the parallel regions of medium and large phantoms, suggesting potential printing-related artifact causes localized water accumulation.
 
 ### Mean diffusivity
 
-MD maps showed spatial changes progressing from the edges of the crossing regions toward their centers. On day 25, crossing-region MD was **1.059** (small), **1.001** (medium), and **0.661** (large), expressed in **10⁻³ mm²/s**. The lower crossing-region MD in the large phantom may be consistent with slower water penetration or incomplete dissolution, but does not establish either mechanism.
+MD maps showed spatial changes progressing from the edges of the crossing regions toward their centers, potentially due to printing limitations resulting in lower fiber density at the crossing-region edges compared with their centers. On day 25, crossing-region MD was **1.059** (small), **1.001** (medium), and **0.661** (large), expressed in **10⁻³ mm²/s**. The lower crossing-region MD and ODI in the large phantom may indicate incomplete PVA dissolution, potentially explaining the early temporarily observed FA contrast between crossing and parallel regions.
 
 ### Orientation dispersion index
 
-On day 25, crossing-region ODI was **0.086** (small), **0.075** (medium), and **0.306** (large). Crossing ODI exceeded parallel ODI by day 23 only in the small phantom in the reported comparisons. ODI behavior may also reflect model-fitting limitations and differences in pore geometry, rather than dissolution alone.
+On day 25, crossing-region ODI was 0.086 (small), 0.075 (medium), and 0.306 (large). Crossing ODI exceeded parallel ODI by day 23 only in the small phantom, potentially because the medium and large phantoms require more time for PVA dissolution.
 
 ### Summary
 
-The smaller phantom generally exhibited earlier changes in diffusion metrics, while the medium and large phantoms displayed visible low-FA bands and possible structural heterogeneity. These patterns are **hypothesis-generating**, not proof of diameter-dependent dissolution rates or printing defects.
+The smaller phantom exhibited earlier changes in diffusion metrics, suggesting faster dissolution, while the low-FA bands in larger phantoms suggest a greater risk of printing artifacts, highlighting the need for careful handling and size-specific printing settings.
 
 ## Interpretation and limitations
 
 - **Diameter and dissolution:** Diameter was varied to explore its possible influence on lateral water penetration and PVA dissolution. The data suggest earlier metric changes in smaller phantoms but do not directly quantify dissolved PVA or pore connectivity.
 - **Printing heterogeneity:** Low-FA bands in medium and large parallel regions may reflect printing artifacts and localized water trapping. Structural imaging is required to confirm this interpretation.
-- **Spatial gradients:** MD patterns from crossing-region edges toward the center could reflect nonuniform water penetration, heterogeneous printed density, or other factors.
 - **Air bubbles:** Air bubbles were visible in mean b = 0 images and may influence image quality and quantitative metrics.
-- **Model assumptions:** ODI is derived from a biophysical diffusion model developed for tissue; its interpretation in GEL-LAY pores requires independent validation.
-- **Study scope:** Only three diameters at a single thickness and nominal printing configuration were examined, with manually selected central-slice ROIs.
+
 
 **Future work:** Use micro-CT to characterize pore geometry and connectivity, evaluate more complex white-matter-mimicking geometries using customized printer instructions, optimize diameter-specific printing parameters, and assess vacuum degassing to reduce trapped air.
 
@@ -129,23 +126,20 @@ The following figure files are provided alongside this README in the accompanyin
 
 ![Study overview](figures/ISMRM_Preview_300dpi%281%29.png)
 
-## Repository contents
 
-The repository is intended to share the phantom design files, slicer/printing settings, figure outputs, and Python analysis scripts. Exact links to the existing design and script files should be added once their GitHub paths are confirmed; no filenames or directories for these materials are assumed here.
 
 ## Reproducibility notes
 
 - Print geometry, infill, water replacement, and acquisition parameters are documented above.
 - Comparisons use manually delineated, filtered middle-slice ROIs; ROI placement can influence the means.
-- Some figure panels use per-image display ranges to reveal local contrast. Do not compare apparent brightness across such panels as though they share a common scale; consult numeric plots and color bars.
 - The reported material costs are estimates based on filament consumption and do not include labor, equipment, electricity, or imaging costs.
-- Raw MRI data and complete processing environments are not represented as publicly available unless explicitly uploaded.
+
 
 ## Project and attribution
 
 Developed as part of research on customizable axon-mimetic diffusion MRI phantoms at **Otto von Guericke University Magdeburg**, Germany.
 
-**Repository:** [SaifQasem29/7T-Diffusion-MRI-Phantoms](https://github.com/SaifQasem29/7T-Diffusion-MRI-Phantoms)
+**Repository:** [SaifQasem29/7T-Diffusion-MRI-Phantoms](https://github.com/SaifQasem29/7T-3D-Printed-Diffusion-MRI-Phantoms)
 
 **Contact / maintainer:** [Saif Qasem](https://github.com/SaifQasem29)
 
