@@ -137,3 +137,10 @@ Developed as part of research on customizable axon-mimetic diffusion MRI phantom
 **Contact / maintainer:** [Saif Qasem](https://github.com/SaifQasem29)
 
 If you use these designs or analysis materials, please acknowledge the repository and any associated publication when available. No software license is implied unless a `LICENSE` file is added.
+
+## References
+
+1.	Jelescu IO, Budde MD. Design and Validation of Diffusion MRI Models of White Matter. Front Phys. 2017 Nov 28;5:61. doi:10.3389/fphy.2017.00061 
+2.	Mushtaha FN, Kuehn TK, El-Deeb O, Rohani SA, Helpard LW, Moore J, et al. Design and characterization of a 3D-printed axon-mimetic phantom for diffusion MRI. Magn Reson Med. 2021 Nov;86(5):2482–96. doi:10.1002/mrm.28886 PubMed PMID: 34196049; PubMed Central PMCID: PMC8596689. 
+3.	Kuehn TK, Mushtaha FN, Khan AR, Baron CA. Enabling Complex Fibre Geometries Using 3D Printed Axon-Mimetic Phantoms. Front Neurosci. 2022 Apr 7;16:833209. doi:10.3389/fnins.2022.833209 
+
