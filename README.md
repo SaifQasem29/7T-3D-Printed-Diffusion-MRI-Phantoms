@@ -11,7 +11,7 @@ This repository documents the design, fabrication, preparation, 7T MRI acquisiti
 
 ## Scientific background and aim
 
-Validating diffusion MRI measurements remains challenging. Physical diffusion phantoms offer controlled structures, but conventional designs can be costly and difficult to customize. GEL-LAY 3D printing provides an accessible route to customizable, axon-mimetic structures. Dissolution of the filament's water-soluble PVA component creates microscopic pores that may support anisotropic diffusion. Because the pores are expected to be predominantly oriented within the printing plane, phantom diameter may affect lateral water penetration and the time course of dissolution.
+Validation in diffusion MRI remains a challenge [1]. Although diffusion phantoms have advanced significantly, they can be expensive and time-consuming to produce2.  GEL-LAY filament 3D-printed phantoms offer inexpensive, easily customizable solutions for axon-mimetic microstructures. Dissolution of the filament water-soluble polyvinyl alcohol (PVA) component creates microscopic pores, enabling anisotropic diffusion [2],[3]. As these pores are predominantly oriented within the printing plane, phantom diameter may affect water penetration and PVA dissolution. Therefore, we explore diameter-dependent temporal changes in diffusion MRI metrics at 7T.
 
 **Aim:** Explore diameter-dependent temporal changes in fractional anisotropy (FA), mean diffusivity (MD), and orientation dispersion index (ODI) in parallel- and crossing-fiber regions during preparation for 7T diffusion MRI.
 
